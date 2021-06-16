@@ -2,12 +2,14 @@
   /* COLORS */
   --gray: #f6f6f6;
   --gray1: #637589;
+  --gray2: #a1a1a1;
   --purple: #5e227f;
   --yellow: #f8b500;
   --pink: #d22780;
 
   /* FONTS */
   --primary-font: "Poppins", sans-serif;
+  --heading-font: "Playfair Display", serif;
 }
 
 /********************** 
@@ -21,6 +23,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: var(--primary-font);
+  scroll-behavior: smooth;
 }
 
 h1,
@@ -47,12 +50,16 @@ img {
 .btn {
   border: none;
   color: white;
-  background-color: var(--yellow);
+  background-color: var(--purple);
   border-radius: 5px;
   padding: 0.8em 1.5em;
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1.2px;
+}
+
+.bar {
+  display: none;
 }
 
 /********************** 
@@ -73,7 +80,7 @@ img {
 
 .logo-container {
   margin-top: 1em;
-  width: 50px;
+  width: 90px;
 }
 
 .logo {
@@ -83,6 +90,10 @@ img {
 .nav {
   padding: 0.8em 0;
   background-color: #fff;
+  position: sticky;
+  z-index: 10;
+  box-shadow: 0px 2px 3.5px 0.5px var(--gray2);
+  top: 0;
 }
 
 .hamburger {
@@ -148,9 +159,9 @@ img {
 }
 
 .main__heading {
-  color: var(--purple);
   font-size: 3rem;
   font-weight: 900;
+  font-family: var(--heading-font);
 }
 
 .main__text {
@@ -163,6 +174,7 @@ img {
 .arrow {
   width: 35px;
   margin: 0 auto;
+  padding-bottom: 2.5rem;
 }
 
 /********************** 
@@ -182,13 +194,8 @@ img {
   color: var(--gray1);
 }
 
-.section__heading,
-.card__heading {
-  color: var(--purple);
-}
-
-.section_-heading {
-  font-size: 2.125rem;
+.section__heading {
+  font-family: var(--heading-font);
 }
 
 .card__heading {
@@ -207,6 +214,7 @@ img {
 
 .card__icon {
   width: 50px;
+  margin-left: 1rem;
 }
 
 .card + .card {
@@ -214,7 +222,7 @@ img {
 }
 
 .card-bottom {
-  margin-left: 60px;
+  margin-left: 80px;
 }
 
 @media (min-width: 1080px) {
@@ -228,6 +236,10 @@ img {
 
   .row--spacing {
     justify-content: space-between;
+  }
+
+  .row--align {
+    align-items: center;
   }
 
   /********************** 
@@ -335,11 +347,11 @@ img {
   }
 
   /********************** 
-  HOW-IT-WORKS STYLES
+    HOW-IT-WORKS STYLES
   ***********************/
 
   .how-it-works {
-    padding: 5em 0;
+    padding: 5em 0 3em 0;
   }
 
   .card {
@@ -348,5 +360,30 @@ img {
 
   .card + .card {
     margin-top: 0;
+  }
+
+  /********************** 
+    BAR STYLES
+  ***********************/
+
+  .bar {
+    display: block;
+    background-color: var(--gray);
+    padding: 3em 0;
+  }
+
+  .company {
+    align-self: center;
+    color: var(--gray2);
+    width: 20%;
+  }
+
+  .company__logo {
+    width: 15%;
+  }
+
+  .company__name {
+    align-self: center;
+    margin-left: 1.2em;
   }
 }
