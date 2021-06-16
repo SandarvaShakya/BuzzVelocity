@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/style.css" />
@@ -27,7 +28,11 @@
                 alt="telephone"
                 class="phone__icon"
               />
-              <span class="phone__number">+1(718) 73493</span>
+              <span class="phone__number">
+                <a href="tel: +977 9841234567" class="phone__link">
+                  +977 9841234567
+                </a>
+              </span>
             </div>
 
             <div class="email row">
@@ -36,40 +41,70 @@
                 alt="telephone"
                 class="email__icon"
               />
-              <span class="email__address">Info@example.com</span>
+              <span class="email__address">
+                <a href="mailto: exampe@gmail.com" class="email__link">
+                  Info@gmail.com
+                </a>
+              </span>
             </div>
           </div>
 
           <!-- Social Links -->
           <div class="social">
-            <a href="#" class="social__links">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              class="social__links"
+            >
               <img
-                src="images/facebook.svg"
+                src="images/social/facebook.svg"
                 alt="facebook"
                 class="social__logo"
               />
             </a>
 
-            <a href="#" class="social__links">
-              <img src="images/twitter.svg" alt="twitter" class="social__logo"
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="social__links"
+            >
+              <img
+                src="images/social/linkedin.svg"
+                alt="linkedin"
+                class="social__logo"
             /></a>
 
-            <a href="#" class="social__links">
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="social__links"
+            >
               <img
-                src="images/instagram.svg"
+                src="images/social/instagram.svg"
                 alt="instagram"
                 class="social__logo"
               />
             </a>
 
-            <a href="#" class="social__links">
-              <img src="images/youtube.svg" alt="youtube" class="social__logo"
+            <a
+              href="https://www.youtube.com/"
+              target="_blank"
+              class="social__links"
+            >
+              <img
+                src="images/social/youtube.svg"
+                alt="youtube"
+                class="social__logo"
             /></a>
 
-            <a href="#" class="social__links">
+            <a
+              href="https://www.tiktok.com/"
+              target="_blank"
+              class="social__links"
+            >
               <img
-                src="images/snapchat.svg"
-                alt="snapchat"
+                src="images/social/tik-tok.svg"
+                alt="tiktok"
                 class="social__logo"
               />
             </a>
@@ -79,7 +114,9 @@
 
       <nav class="nav">
         <div class="container row">
-          <h1 class="logo">Buzz Velocity</h1>
+          <div class="logo">
+            <img src="images/logo of bv.svg" class="logo" alt="logo" />
+          </div>
           <div class="nav-bar">
             <ul class="nav__list row">
               <li class="nav__items">
@@ -111,6 +148,9 @@
       <main class="main">
         <div class="container">
           <div class="row row--spacing container--main">
+            <div class="main__image">
+              <img src="images/people.jpg" alt="man in nature" />
+            </div>
             <div class="main__content">
               <h1 class="main__heading">
                 Professional Designers<br />
@@ -122,9 +162,6 @@
                 non obcaecati recusandae similique.
               </p>
               <a href="#" class="btn main__btn">Contact Us</a>
-            </div>
-            <div class="main__image">
-              <img src="images/people.jpg" alt="man in nature" />
             </div>
           </div>
           <div class="arrow">
