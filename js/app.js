@@ -12,9 +12,25 @@ function scroll() {
   const section = document.querySelector("#scroll-view");
 
   arrow.addEventListener("click", () => {
-    section.scrollIntoView(true);
+    section.scrollIntoView(false);
+  });
+}
+
+function activeLink() {
+  const navLinks = document.querySelectorAll(".nav__links");
+
+  navLinks.forEach(function (link) {
+    link.addEventListener("click", (e) => {
+      navLinks.forEach((links) => {
+        if (links.classList.contains("active")) {
+          links.classList.remove("active");
+        }
+      });
+      e.target.classList.add("active");
+    });
   });
 }
 
 menu();
 scroll();
+activeLink();

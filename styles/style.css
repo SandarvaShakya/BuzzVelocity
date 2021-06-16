@@ -58,8 +58,20 @@ img {
   letter-spacing: 1.2px;
 }
 
+.section {
+  padding: 3em 0 1em 0;
+}
+
 .bar {
   display: none;
+}
+
+.row--margin-top {
+  margin-top: 1em;
+}
+
+.card__heading {
+  font-size: 1em;
 }
 
 /********************** 
@@ -124,6 +136,11 @@ img {
   text-transform: uppercase;
 }
 
+.nav__links:hover,
+.nav__links:focus {
+  color: black;
+}
+
 .btn {
   color: white;
 }
@@ -135,7 +152,7 @@ img {
 }
 
 .active {
-  color: var(--gray3);
+  color: black;
 }
 
 /********************** 
@@ -181,10 +198,6 @@ img {
   HOW-IT-WORKS STYLES
 ***********************/
 
-.how-it-works {
-  padding: 3em 0;
-}
-
 .section--secondary {
   margin: 3em 0;
 }
@@ -196,10 +209,6 @@ img {
 
 .section__heading {
   font-family: var(--heading-font);
-}
-
-.card__heading {
-  font-size: 1.125em;
 }
 
 .number {
@@ -225,6 +234,27 @@ img {
   margin-left: 80px;
 }
 
+/********************** 
+  SERVICES WE PROVIDE STYLES
+***********************/
+
+.card--flex {
+  display: flex;
+}
+
+.card--reset {
+  margin-left: 0;
+}
+
+.card--shadow {
+  box-shadow: 1px 1px 5px 0.5px var(--gray1);
+  padding: 1.5em;
+}
+
+.card--margin-left {
+  margin-left: 1em;
+}
+
 @media (min-width: 1080px) {
   /********************** 
     UNIVERSAL STYLES
@@ -242,8 +272,12 @@ img {
     align-items: center;
   }
 
+  .section {
+    padding: 5em 0 3em 0;
+  }
+
   /********************** 
-    HEADER STYLES
+      HEADER STYLES
   ***********************/
 
   .header {
@@ -349,10 +383,6 @@ img {
   /********************** 
     HOW-IT-WORKS STYLES
   ***********************/
-
-  .how-it-works {
-    padding: 5em 0 3em 0;
-  }
 
   .card {
     width: 30%;
