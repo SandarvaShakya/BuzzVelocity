@@ -1,20 +1,7 @@
-:root {
-  /* COLORS */
-  --gray: #f6f6f6;
-  --gray1: #637589;
-  --gray2: #a1a1a1;
-  --purple: #5e227f;
-  --yellow: #f8b500;
-  --pink: #d22780;
-
-  /* FONTS */
-  --primary-font: "Poppins", sans-serif;
-  --heading-font: "Playfair Display", serif;
-}
-
 /********************** 
     UNIVERSAL STYLES
 ***********************/
+
 * {
   box-sizing: border-box;
 }
@@ -56,10 +43,19 @@ img {
   text-decoration: none;
   font-weight: 600;
   letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background-color: var(--hover-purple);
 }
 
 .section {
   padding: 3em 0 1em 0;
+}
+
+.section--secondary {
+  margin: 3em 0;
 }
 
 .bar {
@@ -70,8 +66,21 @@ img {
   margin-top: 1em;
 }
 
+.row--align-center {
+  align-items: center;
+  justify-content: center;
+}
+
 .card__heading {
   font-size: 1em;
+}
+
+.section--light {
+  background-color: var(--gray);
+}
+
+.center {
+  text-align: center;
 }
 
 /********************** 
@@ -97,6 +106,10 @@ img {
 
 .logo {
   width: 100%;
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .nav {
@@ -141,7 +154,9 @@ img {
   color: black;
 }
 
-.btn {
+.btn,
+.btn:hover,
+.btn:focus {
   color: white;
 }
 
@@ -153,106 +168,6 @@ img {
 
 .active {
   color: black;
-}
-
-/********************** 
-    MAIN STYLES
-***********************/
-
-.container--main {
-  padding: 3em 0;
-}
-
-.main {
-  background-color: var(--gray);
-}
-
-.main__image {
-  margin-bottom: 3em;
-}
-
-.main__image img {
-  width: 100%;
-}
-
-.main__heading {
-  font-size: 3rem;
-  font-weight: 900;
-  font-family: var(--heading-font);
-}
-
-.main__text {
-  font-size: 1.125rem;
-  color: var(--gray1);
-  margin-bottom: 3em;
-  line-height: 1.8;
-}
-
-.arrow {
-  width: 35px;
-  margin: 0 auto;
-  padding-bottom: 2.5rem;
-}
-
-/********************** 
-  HOW-IT-WORKS STYLES
-***********************/
-
-.section--secondary {
-  margin: 3em 0;
-}
-
-.section__text,
-.card__text {
-  color: var(--gray1);
-}
-
-.section__heading {
-  font-family: var(--heading-font);
-}
-
-.number {
-  color: var(--gray);
-  font-size: 2.25rem;
-  line-height: 50px;
-}
-
-.card-top {
-  display: flex;
-}
-
-.card__icon {
-  width: 50px;
-  margin-left: 1rem;
-}
-
-.card + .card {
-  margin-top: 2em;
-}
-
-.card-bottom {
-  margin-left: 80px;
-}
-
-/********************** 
-  SERVICES WE PROVIDE STYLES
-***********************/
-
-.card--flex {
-  display: flex;
-}
-
-.card--reset {
-  margin-left: 0;
-}
-
-.card--shadow {
-  box-shadow: 1px 1px 5px 0.5px var(--gray1);
-  padding: 1.5em;
-}
-
-.card--margin-left {
-  margin-left: 1em;
 }
 
 @media (min-width: 1080px) {
@@ -360,60 +275,5 @@ img {
 
   .hamburger {
     display: none;
-  }
-
-  /********************** 
-    MAIN STYLES
-  ***********************/
-
-  .main__content {
-    width: 50%;
-  }
-
-  .main__image {
-    margin-top: 0;
-    width: 40%;
-    order: 2;
-  }
-
-  .container--main {
-    padding: 7em 0 3.8em 0;
-  }
-
-  /********************** 
-    HOW-IT-WORKS STYLES
-  ***********************/
-
-  .card {
-    width: 30%;
-  }
-
-  .card + .card {
-    margin-top: 0;
-  }
-
-  /********************** 
-    BAR STYLES
-  ***********************/
-
-  .bar {
-    display: block;
-    background-color: var(--gray);
-    padding: 3em 0;
-  }
-
-  .company {
-    align-self: center;
-    color: var(--gray2);
-    width: 20%;
-  }
-
-  .company__logo {
-    width: 15%;
-  }
-
-  .company__name {
-    align-self: center;
-    margin-left: 1.2em;
   }
 }

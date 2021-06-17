@@ -1,0 +1,15 @@
+:root {
+  /* COLORS */
+  --gray: #e0e0e0;
+  --gray1: #637589;
+  --gray2: #a1a1a1;
+  --purple: #5e227f;
+  --yellow: #f8b500;
+  --pink: #d22780;
+
+  --hover-purple: #7a34a0;
+
+  /* FONTS */
+  --primary-font: "Poppins", sans-serif;
+  --heading-font: "Playfair Display", serif;
+}

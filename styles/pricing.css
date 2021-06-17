@@ -1,0 +1,43 @@
+@import url(./constants.css);
+
+/********************** 
+    HEADING STYLES
+***********************/
+
+.container--main {
+  padding: 3em 0;
+}
+
+.heading {
+  background-color: var(--gray);
+}
+
+.heading h1 {
+  font-family: var(--heading-font);
+  font-size: 3rem;
+}
+
+.sub-heading h3 {
+  font-weight: 300;
+}
+
+.sub-heading--bold {
+  font-weight: 500;
+}
+
+/*****************************
+    THE WAY WE CHARGE STYLES
+******************************/
+
+.section__heading {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+}
+
+.section__text {
+  color: var(--gray1);
+  margin-top: 1em;
+}
+
+@media (min-width: 1080px) {
+}

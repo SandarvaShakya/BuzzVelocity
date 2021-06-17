@@ -7,15 +7,6 @@ function menu() {
   });
 }
 
-function scroll() {
-  const arrow = document.querySelector(".arrow");
-  const section = document.querySelector("#scroll-view");
-
-  arrow.addEventListener("click", () => {
-    section.scrollIntoView(false);
-  });
-}
-
 function activeLink() {
   const navLinks = document.querySelectorAll(".nav__links");
 
@@ -32,5 +23,4 @@ function activeLink() {
 }
 
 menu();
-scroll();
 activeLink();
