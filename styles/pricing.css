@@ -1,6 +1,58 @@
 /*****************************
-    THE WAY WE CHARGE STYLES
+    CARDS STYLES
 ******************************/
+.card {
+  padding: 2em;
+  box-shadow: 1px 1px 5px 1px var(--gray);
+}
+
+.card__top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__heading {
+  text-align: center;
+}
+
+.card__price {
+  color: var(--gray1);
+}
+
+.card__content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tick {
+  width: 20%;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.card__content p {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+.card__content {
+  margin-top: 1em;
+}
 
 @media (min-width: 1080px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 40px;
+  }
+
+  .tick {
+    width: 10%;
+  }
+
+  .card__content p {
+    width: 90%;
+  }
 }
