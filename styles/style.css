@@ -170,6 +170,31 @@ img {
   color: black;
 }
 
+/********************** 
+    HEADING STYLES
+***********************/
+
+.container--main {
+  padding: 3em 0;
+}
+
+.heading {
+  background-color: var(--gray);
+}
+
+.heading h1 {
+  font-family: var(--heading-font);
+  font-size: 3rem;
+}
+
+.sub-heading h3 {
+  font-weight: 300;
+}
+
+.sub-heading--bold {
+  font-weight: 500;
+}
+
 @media (min-width: 1080px) {
   /********************** 
     UNIVERSAL STYLES

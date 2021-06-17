@@ -1,0 +1,13 @@
+/********************** 
+    THESE STYLES ARE FOR OTHER PAGES EXCEPT HOME PAGE
+*/
+
+.section__heading {
+  font-family: var(--heading-font);
+  font-size: 1.5rem;
+}
+
+.section__text {
+  color: var(--gray1);
+  margin-top: 1em;
+}
