@@ -1,9 +1,13 @@
-/*****************************
-    CARDS STYLES
-******************************/
+/********************** 
+    CARD STYLES
+***********************/
 .card {
   padding: 2em;
   box-shadow: 1px 1px 5px 1px var(--gray);
+}
+
+.card + .card {
+  margin-top: 40px;
 }
 
 .card__top {
@@ -41,6 +45,10 @@
 }
 
 @media (min-width: 1080px) {
+  /********************** 
+        CARD STYLES
+  ***********************/
+
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -54,5 +62,9 @@
 
   .card__content p {
     width: 90%;
+  }
+
+  .card + .card {
+    margin-top: 0;
   }
 }
