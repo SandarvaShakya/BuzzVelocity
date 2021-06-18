@@ -1,3 +1,5 @@
+/* THESE  STYLES ARE THE UNIVERSAL STYLES ON ALL THE PAGES */
+
 /********************** 
     UNIVERSAL STYLES
 ***********************/
@@ -89,6 +91,26 @@ img {
 
 .header {
   display: none;
+}
+
+.social {
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+
+.social__logo,
+.phone__icon,
+.email__icon {
+  width: 15px;
+}
+
+.social__links {
+  text-decoration: none;
+}
+
+.social__links + .social__links {
+  margin-left: 1em;
 }
 
 /********************** 
@@ -193,6 +215,67 @@ img {
 
 .sub-heading--bold {
   font-weight: 500;
+}
+
+/********************** 
+    FOOTER STYLES
+***********************/
+
+.contact-us {
+  margin-top: 3em;
+}
+
+.contact__list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact__item,
+.newsletter__text {
+  font-size: 1rem;
+  color: var(--gray1);
+}
+
+.contact__item + .contact__item {
+  margin-top: 0.5em;
+}
+
+.btn--sub {
+  width: 40%;
+  border-radius: 0;
+  padding: 0;
+  padding: 1em 0.5em;
+  margin-left: -4px;
+}
+
+.input {
+  width: 55%;
+  padding: 1em 0.5em;
+  border: none;
+  display: inline-block;
+}
+
+.important__links {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  font-size: 0.75rem;
+}
+
+.newsletter .social,
+.important-section h3 {
+  display: none;
+}
+
+.important__items a {
+  color: var(--gray1);
+}
+
+.copyright {
+  text-align: center;
+  padding: 1.5em 0;
+  color: var(--gray1);
 }
 
 @media (min-width: 1080px) {
@@ -300,5 +383,64 @@ img {
 
   .hamburger {
     display: none;
+  }
+
+  /********************** 
+    FOOTER STYLES
+  ***********************/
+
+  .contact-us {
+    margin-top: 0;
+  }
+
+  .contact-us {
+    order: 1;
+    width: 25%;
+  }
+
+  .important-section {
+    order: 2;
+    width: 25%;
+  }
+
+  .important__links {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .important__items::before {
+    content: "\2023";
+    font-size: 1.5em;
+    color: var(--gray1);
+    margin-right: 0.25em;
+  }
+
+  .important__items a {
+    color: var(--gray1);
+    text-decoration: none;
+  }
+
+  .important__items a:hover,
+  .important__items a:focus {
+    color: black;
+  }
+
+  .important-section h3 {
+    display: block;
+    margin-bottom: 0;
+  }
+
+  .newsletter {
+    order: 3;
+    width: 40%;
+  }
+
+  .section--primary .social {
+    display: none;
+  }
+
+  .newsletter .social {
+    margin-top: 2em;
+    display: flex;
   }
 }

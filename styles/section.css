@@ -11,3 +11,21 @@
   color: var(--gray1);
   margin-top: 1em;
 }
+
+.section--dark {
+  background-color: var(--gray);
+}
+
+.section__content--bottom {
+  margin-bottom: 2.5em;
+}
+
+.btn--big {
+  padding: 0.8em 3em;
+}
+
+@media (min-width: 1080px) {
+  .section__content {
+    width: 50%;
+  }
+}
