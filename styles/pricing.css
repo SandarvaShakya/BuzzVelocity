@@ -24,10 +24,6 @@
   text-align: center;
 }
 
-.card__price {
-  color: var(--gray1);
-}
-
 .card__content {
   display: flex;
   justify-content: space-between;
