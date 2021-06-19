@@ -3,7 +3,12 @@
 ***********************/
 .card {
   padding: 2em;
-  box-shadow: 1px 1px 5px 1px var(--gray);
+  border: 1px solid #f4eefb;
+  border-radius: 8px;
+}
+
+.card:hover {
+  box-shadow: 0 0 1rem 1px rgb(0 0 0 / 3%);
 }
 
 .card + .card {
@@ -53,7 +58,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-gap: 40px;
+    grid-gap: 5rem;
   }
 
   .tick {

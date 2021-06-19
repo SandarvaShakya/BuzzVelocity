@@ -53,7 +53,7 @@ img {
 }
 
 .section {
-  padding: 3em 0 1em 0;
+  padding: 3em 0;
 }
 
 .section--secondary {
@@ -65,7 +65,7 @@ img {
 }
 
 .row--margin-top {
-  margin-top: 1em;
+  margin-top: 2.5em;
 }
 
 .row--align-center {
@@ -139,7 +139,7 @@ img {
   background-color: #fff;
   position: sticky;
   z-index: 10;
-  box-shadow: 0px 2px 3.5px 0.5px var(--gray2);
+  box-shadow: 0 0 1rem 1px rgb(0 0 0 / 3%);
   top: 0;
 }
 
@@ -233,7 +233,6 @@ img {
 .contact__item,
 .newsletter__text {
   font-size: 1rem;
-  color: var(--gray1);
 }
 
 .contact__item + .contact__item {
@@ -242,8 +241,9 @@ img {
 
 .btn--sub {
   width: 40%;
-  border-radius: 0;
+  border: 1px solid #f4eefb;
   padding: 0;
+  border-radius: 0;
   padding: 1em 0.5em;
   margin-left: -4px;
 }
@@ -251,7 +251,7 @@ img {
 .input {
   width: 55%;
   padding: 1em 0.5em;
-  border: none;
+  border: 1px solid #f4eefb;
   display: inline-block;
 }
 
@@ -263,19 +263,22 @@ img {
   font-size: 0.75rem;
 }
 
+.important__items a {
+  color: black;
+}
+
 .newsletter .social,
 .important-section h3 {
   display: none;
 }
 
-.important__items a {
-  color: var(--gray1);
-}
-
 .copyright {
   text-align: center;
-  padding: 1.5em 0;
-  color: var(--gray1);
+  padding-bottom: 0.5em;
+}
+
+.social--margin-top {
+  margin-top: 1em;
 }
 
 @media (min-width: 1080px) {
@@ -296,6 +299,7 @@ img {
   }
 
   .section {
+    padding: 0;
     padding: 5em 0 3em 0;
   }
 
@@ -408,21 +412,23 @@ img {
     font-size: 1rem;
   }
 
-  .important__items::before {
-    content: "\2023";
-    font-size: 1.5em;
-    color: var(--gray1);
-    margin-right: 0.25em;
+  .important__items {
+    padding-left: 0.5em;
+    margin-left: 0.5em;
+  }
+
+  .important__items::marker {
+    font-family: "Font Awesome 5 Free";
+    content: "\f0da";
+    font-weight: 900;
+  }
+
+  .important__items + .important__items {
+    margin-top: 0.5em;
   }
 
   .important__items a {
-    color: var(--gray1);
     text-decoration: none;
-  }
-
-  .important__items a:hover,
-  .important__items a:focus {
-    color: black;
   }
 
   .important-section h3 {

@@ -1,6 +1,6 @@
-/********************** 
+/********************************************************
     THESE STYLES ARE FOR OTHER PAGES EXCEPT HOME PAGE
-*/
+********************************************************/
 
 .section__heading {
   font-family: var(--heading-font);
@@ -12,8 +12,14 @@
   margin-top: 1em;
 }
 
-.section--dark {
-  background-color: var(--gray);
+.section__heading--light,
+.section__text--light {
+  color: white;
+}
+
+.section--gradient {
+  background-color: #7f53ac;
+  background-image: linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
 }
 
 .section__content--bottom {
@@ -22,6 +28,11 @@
 
 .btn--big {
   padding: 0.8em 3em;
+}
+
+.btn--light {
+  background-color: white;
+  color: black;
 }
 
 @media (min-width: 1080px) {
