@@ -1,0 +1,73 @@
+/********************** 
+    MAIN SECTION STYLES
+***********************/
+
+.section__content {
+  margin-top: 1em;
+}
+
+.about__list {
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+.about__items {
+  list-style: none;
+  margin-left: 1em;
+  padding-left: 0.5em;
+  color: var(--gray1);
+}
+
+.about__items::marker {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1em;
+  content: "\f058";
+  color: black;
+}
+
+.section__list {
+  margin-bottom: 2em;
+}
+
+/********************** 
+    BAR STYLES
+***********************/
+
+.bar {
+  display: none;
+}
+
+@media (min-width: 1080px) {
+  .section__image {
+    width: 40%;
+  }
+
+  .section__content {
+    margin-top: 0;
+  }
+
+  /********************** 
+    BAR STYLES
+  ***********************/
+
+  .bar {
+    display: block;
+    background-color: var(--gray);
+    padding: 3em 0;
+  }
+
+  .company {
+    align-self: center;
+    color: var(--gray2);
+    width: 20%;
+  }
+
+  .company__logo {
+    width: 15%;
+  }
+
+  .company__name {
+    align-self: center;
+    margin-left: 1.2em;
+  }
+}
