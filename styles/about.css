@@ -120,6 +120,7 @@
     display: block;
     background-color: var(--gray);
     padding: 3em 0;
+    margin-top: 2em;
   }
 
   .company {
@@ -151,5 +152,14 @@
 
   .team__member + .team__member {
     margin-top: 0;
+  }
+
+  /********************** 
+    ICON BAR STYLES
+***********************/
+
+  .item {
+    width: 20%;
+    text-align: center;
   }
 }
