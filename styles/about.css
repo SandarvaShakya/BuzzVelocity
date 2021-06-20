@@ -37,7 +37,73 @@
   display: none;
 }
 
+/********************** 
+    OUR AMAZING TEAM STYLES
+***********************/
+
+.team {
+  margin-top: 3em;
+}
+
+.team__member {
+  padding: 2em 1em;
+  border: 1px solid red;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+}
+
+.team__member:hover {
+  box-shadow: 0 0 30px var(--hover-card);
+}
+
+.team__member + .team__member {
+  margin-top: 2em;
+}
+
+.member__image {
+  width: 60%;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.member__image img {
+  border-radius: 50%;
+}
+
+.member__name {
+  margin-top: 1em;
+}
+
+.member__post {
+  font-size: 0.75rem;
+}
+
+.member__social {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.social__links--box {
+  background-color: var(--purple);
+  padding: 0.5em;
+  display: inline-flex;
+  border-radius: 8px;
+}
+
+.social__links--box:hover {
+  background-color: var(--hover-purple);
+}
+
+.social__logo {
+  fill: white;
+  margin: 0 auto;
+}
+
 @media (min-width: 1080px) {
+  /********************** 
+    MAIN SECTION STYLES
+***********************/
+
   .section__image {
     width: 40%;
   }
@@ -69,5 +135,21 @@
   .company__name {
     align-self: center;
     margin-left: 1.2em;
+  }
+
+  /********************** 
+    OUR AMAZING TEAM STYLES
+***********************/
+
+  .team {
+    margin-top: 5em;
+  }
+
+  .team__member {
+    width: 22%;
+  }
+
+  .team__member + .team__member {
+    margin-top: 0;
   }
 }

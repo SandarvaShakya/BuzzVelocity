@@ -8,11 +8,14 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: var(--primary-font);
-  scroll-behavior: smooth;
 }
 
 h1,
@@ -283,6 +286,23 @@ img {
   margin-top: 1em;
 }
 
+.footer .scroll-to-top-btn {
+  background-color: var(--purple);
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  color: white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.container .scroll-to-top-btn {
+  display: flex;
+}
+
 @media (min-width: 1080px) {
   /********************** 
     UNIVERSAL STYLES
@@ -450,5 +470,20 @@ img {
   .newsletter .social {
     margin-top: 1em;
     display: flex;
+  }
+
+  .footer {
+    position: relative;
+  }
+
+  .footer .scroll-to-top-btn {
+    display: flex;
+    position: absolute;
+    bottom: 120px;
+    right: 50px;
+  }
+
+  .container .scroll-to-top-btn {
+    display: none;
   }
 }

@@ -36,7 +36,7 @@
 }
 
 @media (min-width: 1080px) {
-  .section__content {
+  .section__content--half {
     width: 50%;
   }
 }

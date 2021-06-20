@@ -22,5 +22,16 @@ function activeLink() {
   });
 }
 
+function scrollToTop() {
+  const scrollBtn = document.querySelectorAll(".scroll-to-top-btn");
+
+  scrollBtn.forEach(function (btn) {
+    btn.addEventListener("click", () => {
+      window.scrollTo(0, 0);
+    });
+  });
+}
+
 menu();
 activeLink();
+scrollToTop();
