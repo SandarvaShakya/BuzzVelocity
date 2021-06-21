@@ -35,8 +35,46 @@
   color: black;
 }
 
+/********************************************************
+  FOR PAGES WHICH HAVE SUBSCRIBE INSTEAD OF CUSTOM PROJECTS
+********************************************************/
+
+.gaq {
+  text-align: left;
+}
+
+.input--full {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.btn--gaq {
+  margin: 0;
+  border-radius: 8px;
+  margin-top: 1em;
+}
+
 @media (min-width: 1080px) {
   .section__content--half {
     width: 50%;
+  }
+
+  .input--full {
+    width: 55%;
+    border-radius: 8px 0 0 8px;
+  }
+
+  .gaq {
+    text-align: right;
+    width: 40%;
+  }
+
+  .btn--gaq {
+    width: 40%;
+    border: 1px solid var(--purple);
+    padding: 0;
+    border-radius: 0 8px 8px 0;
+    padding: 1em 0.5em;
+    margin-left: -4px;
   }
 }

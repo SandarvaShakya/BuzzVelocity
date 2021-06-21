@@ -89,6 +89,10 @@ img {
   text-align: center;
 }
 
+.container--m-bottom {
+  margin-bottom: 4em;
+}
+
 /********************** 
     HEADER STYLES
 ***********************/
@@ -254,7 +258,7 @@ img {
 
 .input {
   width: 55%;
-  padding: 1em 0.5em;
+  padding: 1em 0.8em;
   border: 1px solid #f4eefb;
   border-radius: 8px 0 0 8px;
   display: inline-block;
@@ -305,6 +309,10 @@ img {
 
 .container .scroll-to-top-btn {
   display: flex;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: var(--hover-purple);
 }
 
 @media (min-width: 1080px) {

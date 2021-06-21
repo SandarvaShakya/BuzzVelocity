@@ -161,7 +161,7 @@
 }
 
 .reviews__card {
-  border: 1px solid var(--gray);
+  border: 1px solid var(--border-color);
 }
 
 .reviews__card:hover,

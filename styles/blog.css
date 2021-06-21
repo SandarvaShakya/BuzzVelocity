@@ -1,0 +1,78 @@
+/********************** 
+    POSTS STYLES
+***********************/
+
+.post {
+  border: 1px solid var(--border-color);
+}
+
+.post:hover,
+.post:focus {
+  box-shadow: 0px 0px 30px var(--hover-card);
+}
+
+.post + .post {
+  margin-top: 3em;
+}
+
+.post__image {
+  height: 40%;
+  overflow: hidden;
+}
+
+.post__info {
+  margin: 1em 0;
+  padding: 0 1em;
+}
+
+.post__content {
+  margin-bottom: 1.5em;
+}
+
+.post__heading {
+  margin: 0.8em 0;
+}
+
+.post__text,
+.date {
+  color: var(--gray1);
+}
+
+.post__footer {
+  padding: 0 1em;
+}
+
+.btn-tag {
+  font-size: 0.75rem;
+  width: 30%;
+  text-align: center;
+  padding: 0.2em 0.8em;
+}
+
+.post__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.post__footer span {
+  font-weight: 900;
+  margin-left: 0.3em;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (min-width: 1080px) {
+  .post + .post {
+    margin-top: 0;
+  }
+
+  .grid {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
