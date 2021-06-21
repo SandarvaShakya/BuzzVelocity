@@ -277,6 +277,10 @@ img {
   display: none;
 }
 
+.section--p-bottom {
+  padding-bottom: 0;
+}
+
 .copyright {
   text-align: center;
   padding-bottom: 0.5em;
@@ -485,5 +489,9 @@ img {
 
   .container .scroll-to-top-btn {
     display: none;
+  }
+
+  .section--p-bottom {
+    padding-bottom: 0;
   }
 }
