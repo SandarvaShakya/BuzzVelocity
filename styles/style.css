@@ -93,6 +93,10 @@ img {
   margin-bottom: 4em;
 }
 
+.section--p-top {
+  padding-top: 0;
+}
+
 /********************** 
     HEADER STYLES
 ***********************/
@@ -335,6 +339,10 @@ img {
   .section {
     padding: 0;
     padding: 5em 0 3em 0;
+  }
+
+  .section--p-top {
+    padding-top: 0;
   }
 
   /********************** 

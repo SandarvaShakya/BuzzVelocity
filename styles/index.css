@@ -96,8 +96,234 @@
 }
 
 /********************** 
-    OUR WORKS STYLES
-  ***********************/
+  OUR WORKS STYLES
+***********************/
+
+.section__image + .section__image {
+  margin-top: 2em;
+}
+
+.our-works--primary {
+  padding-bottom: 2em;
+}
+
+.icons {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  text-align: center;
+}
+
+.icon span {
+  font-size: 0.75rem;
+}
+
+/************************************* 
+  WHY YOU SHOULD WORK WITH US STYLES
+*************************************/
+
+.section__content {
+  margin-top: 2em;
+}
+
+.about__list {
+  padding: 0;
+  font-size: 0.875rem;
+}
+
+.about__items {
+  list-style: none;
+  margin-left: 1em;
+  padding-left: 0.5em;
+  color: var(--gray1);
+}
+
+.about__items::marker {
+  font-family: "Font Awesome 5 Free";
+  font-size: 1em;
+  content: "\f058";
+  color: black;
+}
+
+.section__list {
+  margin: 2em 0;
+}
+
+/********************** 
+  LATEST POSTS STYLES
+***********************/
+
+.post {
+  border: 1px solid var(--border-color);
+}
+
+.post:hover,
+.post:focus {
+  box-shadow: 0px 0px 30px var(--hover-card);
+}
+
+.post + .post {
+  margin-top: 3em;
+}
+
+.post__info {
+  margin: 1em 0;
+  padding: 0 1em;
+}
+
+.post__content {
+  margin-bottom: 1.5em;
+}
+
+.post__heading {
+  margin: 0.8em 0;
+}
+
+.post__text,
+.date {
+  color: var(--gray1);
+}
+
+.btn-tag {
+  font-size: 0.75rem;
+  width: 30%;
+  text-align: center;
+  padding: 0.2em 0.8em;
+}
+
+.post__footer {
+  display: flex;
+  padding: 0 1em;
+  margin-bottom: 1em;
+  justify-content: space-between;
+}
+
+.post__footer span {
+  font-weight: 900;
+  margin-left: 0.3em;
+}
+
+.read-more a {
+  text-decoration: none;
+  color: black;
+}
+
+/********************** 
+  CLIENT REVIEWS STYLES
+***********************/
+
+.rating {
+  display: flex;
+  justify-content: center;
+}
+
+.rating__text {
+  font-size: 0.75rem;
+  align-self: center;
+  color: var(--gray1);
+}
+
+.rating__btn {
+  padding: 0.5em 2em;
+  background-color: var(--purple);
+  border-radius: 8px;
+  margin-left: 1em;
+}
+
+.rating__btn:hover,
+.rating__btn:focus {
+  background-color: var(--hover-purple);
+}
+
+.rating__btn span {
+  color: white;
+  margin-right: 0.3em;
+}
+
+.rating__btn i {
+  color: var(--yellow);
+}
+
+.rating__btn--center-rounded {
+  width: 60%;
+  border-radius: 100px;
+  margin: 0 auto;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.fa-quote-right,
+.fa-quote-left {
+  font-size: 2rem;
+  background: -webkit-linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.fa-quote-right {
+  width: 100%;
+  text-align: right;
+}
+
+.reviews--secondary {
+  margin-top: 3em;
+}
+
+.reviews__card {
+  border: 1px solid var(--border-color);
+}
+
+.reviews__card:hover,
+.reviews__card:focus {
+  box-shadow: 0px 0px 30px var(--hover-card);
+}
+
+.reviews__card + .reviews__card {
+  margin-top: 3em;
+}
+
+.client__review {
+  color: var(--gray1);
+}
+
+.client {
+  background-color: var(--gray);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 0 1em 0;
+}
+
+.client__image {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.client__image img {
+  border-radius: 50%;
+}
+
+.card__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.review__top {
+  position: relative;
+  margin-top: 2em;
+  z-index: 1;
+}
+
+.review__bottom {
+  background-color: var(--gray);
+  margin-top: -20px;
+  z-index: -1;
+}
+
+.arrow-btn {
+  display: none;
+}
 
 @media (min-width: 1080px) {
   /********************** 
@@ -161,5 +387,90 @@
   .company__name {
     align-self: center;
     margin-left: 1.2em;
+  }
+
+  /********************** 
+     OUR WORKS STYLES
+  ***********************/
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .our-works--primary {
+    padding: 2em 0;
+    width: 100%;
+    position: sticky;
+    top: 6.5rem;
+  }
+
+  /************************************* 
+     WHY YOU SHOULD WORK WITH US STYLES
+  *************************************/
+
+  .icons {
+    width: 45%;
+    align-self: center;
+    grid-gap: 3rem;
+  }
+
+  .section__content {
+    margin-top: 0;
+    width: 45%;
+  }
+
+  /********************** 
+     LATEST POSTS STYLES
+  ***********************/
+
+  .post + .post {
+    margin-top: 0;
+  }
+
+  .post-grid {
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .btn-div {
+    padding: 1em 0;
+  }
+
+  .section--p-bottom {
+    padding-bottom: 1em;
+  }
+
+  /********************** 
+  CLIENT REVIEWS STYLES
+  ***********************/
+
+  .reviews__card + .reviews__card {
+    margin-top: 0;
+  }
+
+  .reviews__card {
+    width: 28%;
+  }
+
+  .arrow-btn {
+    display: flex;
+    background-color: var(--purple);
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-60px, 200px);
+  }
+
+  .arrow-btn--right {
+    transform: translate(60px, 200px);
   }
 }

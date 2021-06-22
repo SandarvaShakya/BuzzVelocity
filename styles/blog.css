@@ -15,11 +15,6 @@
   margin-top: 3em;
 }
 
-.post__image {
-  height: 40%;
-  overflow: hidden;
-}
-
 .post__info {
   margin: 1em 0;
   padding: 0 1em;
