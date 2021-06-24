@@ -57,15 +57,12 @@ img {
 }
 
 .section {
-  padding: 3em 0;
+  padding: 5em 0;
+  line-height: 2rem;
 }
 
 .section--secondary {
   margin: 3em 0;
-}
-
-.bar {
-  display: none;
 }
 
 .row--margin-top {
@@ -95,6 +92,14 @@ img {
 
 .section--p-top {
   padding-top: 0;
+}
+
+/********************** 
+  BAR STYLES
+***********************/
+
+.bar {
+  display: none;
 }
 
 /********************** 
@@ -179,8 +184,7 @@ img {
 .nav__links {
   text-decoration: none;
   color: var(--gray1);
-  font-weight: 600;
-  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .nav__links:hover,
@@ -202,6 +206,7 @@ img {
 
 .active {
   color: black;
+  border-bottom: 2px solid black;
 }
 
 /********************** 
@@ -337,12 +342,35 @@ img {
   }
 
   .section {
-    padding: 0;
-    padding: 5em 0 3em 0;
+    padding: 10rem 0;
   }
 
   .section--p-top {
     padding-top: 0;
+  }
+
+  /********************** 
+    BAR STYLES
+  ***********************/
+  .bar {
+    display: block;
+    background-color: var(--gray);
+    padding: 3em 0;
+  }
+
+  .company {
+    align-self: center;
+    color: var(--gray2);
+    width: 20%;
+  }
+
+  .company__logo {
+    width: 15%;
+  }
+
+  .company__name {
+    align-self: center;
+    margin-left: 1.2em;
   }
 
   /********************** 

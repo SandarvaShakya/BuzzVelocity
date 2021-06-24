@@ -2,10 +2,6 @@
     MAIN STYLES
 ***********************/
 
-.container--main {
-  padding: 3em 0;
-}
-
 .main {
   background-color: var(--gray);
 }
@@ -127,27 +123,34 @@
   margin-top: 2em;
 }
 
-.about__list {
-  padding: 0;
-  font-size: 0.875rem;
+.line {
+  width: 30px;
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
 }
 
-.about__items {
-  list-style: none;
-  margin-left: 1em;
-  padding-left: 0.5em;
-  color: var(--gray1);
+.section__block {
+  margin-top: 2rem;
 }
 
-.about__items::marker {
-  font-family: "Font Awesome 5 Free";
-  font-size: 1em;
-  content: "\f058";
-  color: black;
+.block__item {
+  width: 30%;
 }
 
-.section__list {
-  margin: 2em 0;
+.block__name,
+.block__number {
+  color: var(--purple);
+}
+
+.block__name {
+  font-size: 0.75rem;
+  padding-top: 1rem;
+}
+
+.block__number {
+  font-size: 2rem;
+  font-weight: 900;
+  margin-top: 1rem;
 }
 
 /********************** 
@@ -213,46 +216,6 @@
   CLIENT REVIEWS STYLES
 ***********************/
 
-.rating {
-  display: flex;
-  justify-content: center;
-}
-
-.rating__text {
-  font-size: 0.75rem;
-  align-self: center;
-  color: var(--gray1);
-}
-
-.rating__btn {
-  padding: 0.5em 2em;
-  background-color: var(--purple);
-  border-radius: 8px;
-  margin-left: 1em;
-}
-
-.rating__btn:hover,
-.rating__btn:focus {
-  background-color: var(--hover-purple);
-}
-
-.rating__btn span {
-  color: white;
-  margin-right: 0.3em;
-}
-
-.rating__btn i {
-  color: var(--yellow);
-}
-
-.rating__btn--center-rounded {
-  width: 60%;
-  border-radius: 100px;
-  margin: 0 auto;
-  margin-top: 1em;
-  text-align: center;
-}
-
 .fa-quote-right,
 .fa-quote-left {
   font-size: 2rem;
@@ -311,14 +274,11 @@
 
 .review__top {
   position: relative;
-  margin-top: 2em;
-  z-index: 1;
+  margin: 2em 0;
 }
 
 .review__bottom {
   background-color: var(--gray);
-  margin-top: -20px;
-  z-index: -1;
 }
 
 .arrow-btn {
@@ -341,7 +301,7 @@
   }
 
   .container--main {
-    padding: 7em 0 3.8em 0;
+    padding: 7em 0;
   }
 
   /********************** 
@@ -362,31 +322,6 @@
 
   .card--border {
     width: 48%;
-  }
-
-  /********************** 
-    BAR STYLES
-  ***********************/
-
-  .bar {
-    display: block;
-    background-color: var(--gray);
-    padding: 3em 0;
-  }
-
-  .company {
-    align-self: center;
-    color: var(--gray2);
-    width: 20%;
-  }
-
-  .company__logo {
-    width: 15%;
-  }
-
-  .company__name {
-    align-self: center;
-    margin-left: 1.2em;
   }
 
   /********************** 
@@ -439,11 +374,11 @@
   }
 
   .btn-div {
-    padding: 1em 0;
+    padding: 2em 0;
   }
 
   /********************** 
-  CLIENT REVIEWS STYLES
+    CLIENT REVIEWS STYLES
   ***********************/
 
   .reviews__card + .reviews__card {
