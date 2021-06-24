@@ -175,6 +175,11 @@
   padding: 0 1em;
 }
 
+.post__image {
+  height: 250px;
+  overflow: hidden;
+}
+
 .post__content {
   margin-bottom: 1.5em;
 }
