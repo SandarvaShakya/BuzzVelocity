@@ -131,10 +131,8 @@
 
 .section__block {
   margin-top: 2rem;
-}
-
-.block__item {
-  width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .block__name,
@@ -156,6 +154,15 @@
 /********************** 
   LATEST POSTS STYLES
 ***********************/
+
+.post__link {
+  text-decoration: none;
+}
+
+.post__link:active,
+.post__link:visited {
+  color: black;
+}
 
 .post {
   border: 1px solid var(--border-color);
@@ -185,11 +192,12 @@
 }
 
 .post__heading {
+  color: black;
   margin: 0.8em 0;
 }
 
 .post__text,
-.date {
+.time {
   color: var(--gray1);
 }
 
@@ -362,6 +370,10 @@
   .section__content {
     margin-top: 0;
     width: 45%;
+  }
+
+  .block__item {
+    width: 30%;
   }
 
   /********************** 

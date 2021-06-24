@@ -14,10 +14,8 @@
 
 .section__block {
   margin-top: 2rem;
-}
-
-.block__item {
-  width: 30%;
+  display: flex;
+  justify-content: space-between;
 }
 
 .block__name,
@@ -181,6 +179,10 @@
 
   .section__content {
     margin-top: 0;
+  }
+
+  .block__item {
+    width: 30%;
   }
 
   /********************** 
