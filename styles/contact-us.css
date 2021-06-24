@@ -2,10 +2,6 @@
   MAP SECTION STYLES
 ***********************/
 
-/* .section + .section {
-  padding-top: 0;
-} */
-
 .map__info {
   background-color: var(--purple);
   margin-top: -10px;
