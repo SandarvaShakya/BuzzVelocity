@@ -19,6 +19,7 @@
       src="https://kit.fontawesome.com/8a6b16f641.js"
       crossorigin="anonymous"
     ></script>
+
     <link rel="stylesheet" href="../styles/constants.css" />
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/section.css" />
@@ -171,70 +172,29 @@
       </div>
 
       <section class="section">
-        <div class="container">
+        <div class="container center">
+          <div class="section__image">
+            <img src="./images/contactt.png" alt="diary" />
+          </div>
           <div class="section__heading">
             <h2>Feel Free To Knock Us</h2>
           </div>
-          <div class="section__text">
-            We have people of multiple kind in the house. Together we can
-            <br />
-            provide high quality work to satisfy you.
-          </div>
-        </div>
-      </section>
-
-      <!-- MAP SECTION -->
-      <section class="section section--p-top">
-        <div class="container">
-          <div class="map">
-            <div class="map__image">
-              <img src="./images/google-maps.jpg" alt="google-map" />
-            </div>
-            <div class="map__info">
-              <div class="info">
-                <div class="info__icon">
-                  <i class="fas fa-map-marked-alt"></i>
-                </div>
-                <div class="info__text">22 B.Bakerstreet, <br />London, UK</div>
-              </div>
-              <div class="border"></div>
-              <div class="info">
-                <div class="info__icon">
-                  <i class="far fa-address-book"></i>
-                </div>
-                <div class="info__text">22 B.Bakerstreet, <br />London, UK</div>
-              </div>
-              <div class="border"></div>
-              <div class="info">
-                <div class="info__icon">
-                  <i class="fas fa-mail-bulk"></i>
-                </div>
-                <div class="info__text">22 B.Bakerstreet, <br />London, UK</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- LEAVE A MESSAGE SECTION -->
-      <section class="section section--p-top">
-        <div class="container">
-          <h3>Leave a message</h3>
           <div class="inputs grid">
-            <div class="input__container">
+            <div class="input__container input__container1">
               <input type="text" placeholder="Your Name" class="input__bar" />
             </div>
-            <div class="input__container">
+            <div class="input__container input__container2">
+              <select type="select" class="input__bar">
+                <option value="0">What's this about ?</option>
+              </select>
+            </div>
+            <div class="input__container input__container3">
               <input type="email" placeholder="Your Email" class="input__bar" />
             </div>
-            <div class="input__container">
-              <input
-                type="number"
-                placeholder="Your Budget"
-                class="input__bar"
-              />
+            <div class="input__container input__container4">
+              <input type="text" placeholder="Phone no" class="input__bar" />
             </div>
-            <div class="input__container">
+            <div class="input__container input__container5">
               <input
                 type="text"
                 placeholder="Your Message"
@@ -242,8 +202,94 @@
               />
             </div>
           </div>
+          <div class="input__container">
+            <button type="submit" class="btn center btn--m-top">Send</button>
+          </div>
+          <div class="center section__bottom">
+            <h3>CONNECT WITH US ON</h3>
+            <div class="social social--big center">
+              <a
+                href="https://www.facebook.com/"
+                target="_blank"
+                class="social__links"
+              >
+                <img
+                  src="../images/social/facebook1.svg"
+                  alt="facebook"
+                  class="social__logo"
+                />
+              </a>
+
+              <a
+                href="https://www.linkedin.com/"
+                target="_blank"
+                class="social__links"
+              >
+                <img
+                  src="../images/social/linkedin3.svg"
+                  alt="linkedin"
+                  class="social__logo"
+              /></a>
+
+              <a
+                href="https://www.instagram.com/"
+                target="_blank"
+                class="social__links"
+              >
+                <img
+                  src="../images/social/instagram2.svg"
+                  alt="instagram"
+                  class="social__logo"
+                />
+              </a>
+
+              <a
+                href="https://www.youtube.com/"
+                target="_blank"
+                class="social__links"
+              >
+                <img
+                  src="../images/social/youtube4.svg"
+                  alt="youtube"
+                  class="social__logo"
+              /></a>
+            </div>
+          </div>
         </div>
       </section>
+
+      <!-- MAP SECTION -->
+      <section class="section section--p-top">
+        <div class="map">
+          <div class="map__image">
+            <img src="./images/google-maps.jpg" alt="google-map" />
+          </div>
+          <div class="map__info">
+            <div class="info">
+              <div class="info__icon">
+                <i class="fas fa-map-marked-alt"></i>
+              </div>
+              <div class="info__text">22 B.Bakerstreet, <br />London, UK</div>
+            </div>
+            <div class="border"></div>
+            <div class="info">
+              <div class="info__icon">
+                <i class="far fa-address-book"></i>
+              </div>
+              <div class="info__text">22 B.Bakerstreet, <br />London, UK</div>
+            </div>
+            <div class="border"></div>
+            <div class="info">
+              <div class="info__icon">
+                <i class="fas fa-mail-bulk"></i>
+              </div>
+              <div class="info__text">22 B.Bakerstreet, <br />London, UK</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LEAVE A MESSAGE SECTION -->
 
       <section class="section section--gradient">
         <div class="container row row--align row--spacing">

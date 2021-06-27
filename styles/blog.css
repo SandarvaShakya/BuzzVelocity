@@ -4,6 +4,7 @@
 
 .post__link {
   text-decoration: none;
+  display: block;
 }
 
 .post__link:active,
@@ -11,27 +12,24 @@
   color: black;
 }
 
-.post {
-  border: 1px solid var(--border-color);
-}
-
 .post:hover,
 .post:focus {
   box-shadow: 0px 0px 30px var(--hover-card);
 }
 
-.post + .post {
+.post__link + .post__link {
   margin-top: 3em;
 }
 
 .post__image {
   height: 250px;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .post__info {
   margin: 1em 0;
-  padding: 0 1em;
+  padding: 0 0.3rem;
 }
 
 .post__content {
@@ -47,20 +45,25 @@
   color: var(--gray1);
 }
 
-.post__footer {
-  padding: 0 1em;
-}
-
 .btn-tag {
+  color: var(--gray1);
+  background-color: white;
+  border: 1px solid var(--gray1);
   font-size: 0.75rem;
   width: 30%;
   text-align: center;
   padding: 0.2em 0.8em;
 }
 
+.btn-tag:hover,
+.btn-tag:focus {
+  border: 1px solid var(--purple);
+}
+
 .post__footer {
+  padding: 0 0.3rem;
   display: flex;
-  margin-bottom: 1em;
+  margin-bottom: 0 1em;
 }
 
 .post__footer span {
@@ -74,7 +77,7 @@
 }
 
 @media (min-width: 1080px) {
-  .post + .post {
+  .post__link + .post__link {
     margin-top: 0;
   }
 

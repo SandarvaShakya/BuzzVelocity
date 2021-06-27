@@ -90,7 +90,7 @@ img {
   margin-bottom: 4em;
 }
 
-.section--p-top {
+.section--m-top {
   padding-top: 0;
 }
 
@@ -322,6 +322,15 @@ img {
 
 .scroll-to-top-btn:hover {
   background-color: var(--hover-purple);
+}
+
+.social--big {
+  text-align: center !important;
+  font-size: 4rem;
+}
+
+.social--big img {
+  width: 50px;
 }
 
 @media (min-width: 1080px) {
