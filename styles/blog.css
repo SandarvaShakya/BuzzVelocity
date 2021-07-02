@@ -12,11 +12,6 @@
   color: black;
 }
 
-.post:hover,
-.post:focus {
-  box-shadow: 0px 0px 30px var(--hover-card);
-}
-
 .post__link + .post__link {
   margin-top: 3em;
 }
@@ -46,18 +41,18 @@
 }
 
 .btn-tag {
-  color: var(--gray1);
-  background-color: white;
-  border: 1px solid var(--gray1);
   font-size: 0.75rem;
   width: 30%;
   text-align: center;
   padding: 0.2em 0.8em;
-}
 
-.btn-tag:hover,
-.btn-tag:focus {
-  border: 1px solid var(--purple);
+  color: var(--gray1);
+  background-color: white;
+  border: 1px solid var(--gray1);
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
 }
 
 .post__footer {

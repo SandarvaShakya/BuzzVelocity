@@ -119,6 +119,8 @@
 
 .reviews__card {
   border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background-color: var(--gray);
 }
 
 .reviews__card:hover,
@@ -138,17 +140,15 @@
   background-color: var(--gray);
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 2em 0 1em 0;
 }
 
 .client__image {
-  width: 30%;
-  border-radius: 50%;
+  width: 20%;
+  margin-right: 2em;
 }
 
-.client__image img {
-  border-radius: 50%;
+.client__info {
+  align-self: flex-start;
 }
 
 .card__container {
@@ -157,11 +157,8 @@
 }
 
 .review__top {
+  position: relative;
   margin: 2em 0;
-}
-
-.review__bottom {
-  background-color: var(--gray);
 }
 
 .arrow-btn {
@@ -219,7 +216,7 @@
   }
 
   .reviews__card {
-    width: 28%;
+    width: 40%;
   }
 
   .arrow-btn {
