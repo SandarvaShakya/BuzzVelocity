@@ -172,14 +172,13 @@ img {
   max-height: 0;
   overflow: hidden;
   margin-top: 1em;
-  transition: all 0.8s ease;
+  transition: all 0.3s linear;
 }
 
 .nav-bar--toggle {
   max-height: 400px;
   margin-top: 2.5em;
-  overflow: visible;
-  transition: all 0.8s ease;
+  transition: all 0.3s linear;
 }
 
 .nav__links {

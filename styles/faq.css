@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   padding: 0 2em;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s linear;
 }
 
 .question__icon {
@@ -28,6 +28,7 @@
   background: -webkit-linear-gradient(315deg, #7f53ac 0%, #647dee 74%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  cursor: pointer;
 }
 
 .question--toggle {
@@ -40,20 +41,19 @@
   background: initial;
   -webkit-background-clip: initial;
   -webkit-text-fill-color: initial;
+  transition: all 0.3s linear;
 }
 
 .answer {
   padding: 0 2em;
   max-height: 0;
   overflow: hidden;
-  visibility: hidden;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s linear;
 }
 
 .answer--toggle {
   max-height: 400px;
-  overflow: visible;
-  visibility: unset;
+  transition: all 0.3s linear;
 }
 
 @media (min-width: 1080px) {
