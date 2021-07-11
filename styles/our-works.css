@@ -1,6 +1,6 @@
-.main {
-  padding: 10rem 0;
-}
+/**************** 
+  MAIN SECTION 
+****************/
 
 .main__content {
   background-color: var(--purple);
@@ -47,7 +47,66 @@
   margin-top: -20px;
 }
 
+/*****************
+  REVIEW SECTION
+*****************/
+
+.container--m-top {
+  padding-top: 8em;
+}
+
+.container__content {
+  line-height: 3rem;
+  padding-top: 3em;
+}
+
+.quote {
+  font-size: 3rem;
+}
+
+.review p {
+  font-size: 1.625rem;
+}
+
+.review p:nth-child(2) {
+  margin-top: 4rem;
+}
+
+/*************************
+ ABOUT AND PROJECT SECTION 
+*************************/
+
+.section__title {
+  font-size: 1.5rem;
+}
+
+.section__content {
+  font-size: 1.25rem;
+}
+
+/**************
+  Buttons 
+****************/
+.buttons__container {
+  margin-top: 3rem;
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.section__btn {
+  border: 1px solid var(--gray1);
+  padding: 1rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+}
+
 @media (min-width: 1080px) {
+  /**************** 
+    MAIN SECTION 
+  ****************/
+
   .main__content {
     width: 50%;
   }
@@ -71,5 +130,26 @@
 
   .main__cards {
     width: 75%;
+  }
+
+  /*****************
+    REVIEW SECTION
+  *****************/
+
+  .container__image {
+    width: 50%;
+  }
+
+  .container__content {
+    width: 50%;
+    padding: 0 4rem;
+  }
+
+  /*************************
+    ABOUT AND PROJECT SECTION 
+  *************************/
+
+  .section__content {
+    width: 55%;
   }
 }
